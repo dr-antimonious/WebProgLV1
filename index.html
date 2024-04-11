@@ -4,9 +4,341 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivana Ivanić</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Web programiranje LV1</title>
 </head>
 <body>
-    <h1><?= "Hello LV1 task" ?></h1>
+    <header class="header">
+        <img loading="lazy" class="logo" src="Assets/Logo.png"  alt="Logo"/>
+        <nav class="navbar">
+            <a id="selected" href="#">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About me</a>
+            <a href="#testimonials">Testimonials</a>
+        </nav>
+        <a href="#contact">
+            <button type="button" style="background-color: #282938">Contact me</button>
+        </a>
+    </header>
+
+    <div class="page blue-bg">
+        <div class="col-container">
+            <div class="col-2">
+                <b>Hey, I am John</b>
+                <div class="title">I create <span style="display: contents; color: #5E3BEE">product design</span> and brand experience</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="#contact" style="text-decoration: none">
+                    <button type="button" style="width: fit-content">Get in touch</button>
+                </a>
+            </div>
+
+            <div class="col-2">
+                <img loading="lazy" src="Assets/Picture1.png" alt="Profile picture" />
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="skills">
+        <div class="col-container" style="justify-content: space-between">
+            <div class="row-container">
+                <div class="row-1">
+                    <b>My Skills</b>
+                    <div class="title">My Expertise</div>
+                </div>
+
+                <div class="col-container">
+                    <div class="col-4">
+                        <div class="card card-container card-purple-hover blue-bg">
+                            <img loading="lazy" src="Assets/ProductChain.png" alt="Strategy & Direction" class="icon" />
+                            <h2>Strategy & Direction</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-container card-purple-hover blue-bg">
+                            <img loading="lazy" src="Assets/Tag.png" alt="Branding & Logo" class="icon" />
+                            <h2>Branding & Logo</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-container card-purple-hover blue-bg">
+                            <img loading="lazy" src="Assets/FeatherPen.png" alt="UI & UX Design" class="icon" />
+                            <h2>UI & UX Design</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-container card-purple-hover blue-bg">
+                            <img loading="lazy" src="Assets/Code.png" alt="Webflow Development" class="icon" />
+                            <h2>Webflow Development</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="about">
+        <div class="col-container">
+            <div class="col-2">
+                <img loading="lazy" src="Assets/AboutMe.png" alt="Profile picture" />
+            </div>
+            <div class="col-2">
+                <b>About</b>
+                <div class="title">About Me</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="portfolio">
+        <div class="col-container" style="justify-content: space-between">
+            <div class="row-container">
+                <div class="row-1">
+                    <b>Recent Projects</b>
+                    <div class="title">My Portfolio</div>
+                </div>
+            </div>
+            <button style="background: #E62872" type="button">
+                <i class="fa fa-basketball fa-lg"></i>
+                Visit My Dribble
+            </button>
+
+            <div class="col-container">
+                <div class="col-3">
+                    <div class="card card-dark-shadow">
+                        <img style="border-radius: 5px; margin: 0 0" loading="lazy" src="Assets/Ahuse.png" alt="Ahuse" />
+                        <div class="card-container">
+                            <h2>Ahuse</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                            <a class="dribble-link">
+                                <b>View In Dribble</b>
+                                <i class="fa fa-angle-up fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-dark-shadow">
+                        <img style="border-radius: 5px; margin: 0 0" loading="lazy" src="Assets/AppDashboard.png" alt="App Dashboard" />
+                        <div class="card-container">
+                            <h2>App Dashboard</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                            <a class="dribble-link">
+                                <b>View In Dribble</b>
+                                <i class="fa fa-angle-up fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-dark-shadow">
+                        <img style="border-radius: 5px; margin: 0 0" loading="lazy" src="Assets/EasyRent.png" alt="Easy Rent" />
+                        <div class="card-container">
+                            <h2>Easy Rent</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                            <a href="#" class="dribble-link">
+                                <b>View In Dribble</b>
+                                <i class="fa fa-angle-up fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page blue-bg" id="testimonials">
+        <div class="col-container" style="justify-content: space-between">
+            <div class="row-container">
+                <div class="row-1">
+                    <b>Clients Feedback</b>
+                    <div class="title">Customer testimonials</div>
+                </div>
+
+                <div class="col-container">
+                    <div class="col-3">
+                        <div class="card card-container card-purple-border">
+                            <h2 style="color: var(--style-green)">★★★★★</h2>
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros elementum tristique.
+                                Duis cursus, mi quis viverra."
+                            </p>
+                            <div style="flex-direction: row">
+                                <img loading="lazy" src="Assets/DianeRussell.png" class="inline-icon-x" alt="Profile picture of Diane Russell" />
+                                <div style="flex-direction: column">
+                                    <b>Diane Russell</b>
+                                    Starbucks
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card card-container card-purple-border">
+                            <h2 style="color: var(--style-green)">★★★★★</h2>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros elementum tristique.
+                                Duis cursus, mi quis viverra."</p>
+                            <div style="flex-direction: row">
+                                <img loading="lazy" src="Assets/KristinWattson.png" class="inline-icon-x" alt="Profile picture of Kristin Wattson" />
+                                <div style="flex-direction: column">
+                                    <b>Kristin Wattson</b>
+                                    Louis Vuitton
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card card-container card-purple-border">
+                            <h2 style="color: var(--style-green)">★★★★★</h2>
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros elementum tristique.
+                                Duis cursus, mi quis viverra."</p>
+                            <div style="flex-direction: row">
+                                <img loading="lazy" src="Assets/KathrynMurphy.png" class="inline-icon-x" alt="Profile picture of Kathryn Murphy" />
+                                <div style="flex-direction: column">
+                                    <b>Kathryn Murphy</b>
+                                    McDonald's
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="contact">
+        <div class="row-container">
+            <b>Get In Touch</b>
+            <br>
+            <div class="title">Contact Me</div>
+            <br>
+            <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
+
+            <div class="form-container">
+                <div class="form-row-container">
+                    <div class="col-2">
+                        <label>
+                            First name:
+                            <input type="text" class="form-input" name="first_name" required>
+                        </label>
+                    </div>
+                    <div class="col-2">
+                        <label>
+                            Last name:
+                            <input type="text" class="form-input" name="last_name" required>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row-container">
+                    <div class="col-2">
+                        <label>
+                            Email:
+                            <input type="text" class="form-input" name="email" required>
+                        </label>
+                    </div>
+                    <div class="col-2">
+                        <label>
+                            Phone:
+                            <input type="text" class="form-input" name="phone" required>
+                        </label>
+                    </div>
+                </div>
+                <label>
+                    Choose a topic:
+                    <select class="form-input form-select" name="topic" style="width: 100%" required>
+                        <option value="0">Select one...</option>
+                    </select>
+                </label>
+                <label for="message">
+                    Message:
+                </label>
+                <input id="message" type="text" minlength="10" class="form-input" style="width: 100%" name="message" required>
+                <div style="width: 100%">
+                    <input id="termsAcceptance" type="checkbox" class="form-input" name="termsAcceptance" required>
+                    <label for="termsAcceptance">
+                        I accept the terms
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="blue-bg" style="margin: 2vh 0">
+        <div class="footer">
+            <img loading="lazy" class="logo" src="Assets/Logo.png"  alt="Logo"/>
+            <nav class="navbar">
+                <a id="selected" href="#">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About me</a>
+                <a href="#contact">Contact</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#portfolio">Portfolio</a>
+            </nav>
+            <div style="justify-content: center">
+                <a href="#" style="text-decoration: none">
+                    <img class="inline-icon-sm" loading="lazy" src="Assets/Facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" style="text-decoration: none">
+                    <img class="inline-icon-sm" loading="lazy" src="Assets/Instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" style="text-decoration: none">
+                    <img class="inline-icon-sm" loading="lazy" src="Assets/Twitter.png" alt="Twitter"/>
+                </a>
+                <a href="#" style="text-decoration: none">
+                    <img class="inline-icon-sm" loading="lazy" src="Assets/Linkedin.png" alt="Linkedin"/>
+                </a>
+            </div>
+        </div>
+        <hr class="solid" style="margin: 1vh 2vw">
+        <div class="footer">
+            <p>
+                Made by <a style="text-decoration: none" href="https://github.com/dr-antimonious">antimonious</a>
+            </p>
+            <div id="footerLinks">
+                <a href="#" style="text-decoration: none; margin: 0 1vw">
+                    Privacy policy
+                </a>
+                <a href="#" style="text-decoration: none; margin: 0 1vw">
+                    Terms of service
+                </a>
+                <a href="https://en.wikipedia.org/wiki/HTTP_cookie" style="text-decoration: none; margin: 0 1vw">
+                    Cookie settings
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
